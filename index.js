@@ -1,7 +1,7 @@
 const express = require("express")
 const crypto = require("node:crypto")
 const moviesJSON = require("./movies.json") // en commonJS se puede importar y usar json directamente
-const { validateMovie, validatePartialMovie } = require("./schemas/movies")
+const { validateMovie, validatePartialMovie } = require("./movies")
 
 const app = express()
 app.use(express.json())
